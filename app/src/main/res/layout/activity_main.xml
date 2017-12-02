@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha=".7"
+    android:background="@drawable/rmvs"
+    tools:context="com.example.android.footballmatch.MainActivity">
+    <TextView
+        android:id="@+id/game_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/game_on"
+        android:textColor="#ff0008"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            >
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="goalrma"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/goal"
+                android:textAllCaps="false"
+                android:textColor="#ff0008"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="foulrma"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/foul"
+                android:textAllCaps="false"
+                android:textColor="#ff0008"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="ycardrma"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/yellow_card"
+                android:textAllCaps="false"
+                android:textColor="#ff0008"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="rcardrma"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/red_card"
+                android:textAllCaps="false"
+                android:textColor="#ff0008"
+                />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+       /> >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            >
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="goalfcb"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/goal"
+                android:textAllCaps="false"
+                android:textColor="#ff0008" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="foulfcb"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/foul"
+                android:textAllCaps="false"
+                android:textColor="#ff0008"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="ycardfcb"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/yellow_card"
+                android:textAllCaps="false"
+                android:textColor="#ff0008"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha=".7"
+                android:background="#abff9e"
+                android:onClick="rcardfcb"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/red_card"
+                android:textAllCaps="false"
+                android:textColor="#ff0008"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/game_on"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/rma"
+        android:textColor="#ff0008"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_on"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/vs"
+        android:textColor="#ff0008"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/game_on"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/fcb"
+        android:textColor="#ff0008"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+<LinearLayout
+    android:id="@+id/res"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/rma"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/goalsrma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ff0008"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/foulsrma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ff0008"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/ycardsrma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ff0008"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/rcardsrma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ff0008"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#ff0008"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rma"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/layoutvs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goals"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/goals"
+                android:textColor="#ff0008"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fouls"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fouls"
+                android:textColor="#ff0008"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ycards"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yellow_cards"
+                android:textColor="#ff0008"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rcards"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/red_cards"
+                android:textColor="#ff0008"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ff0008"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/goalsfcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ff0008"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/foulsfcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ff0008"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/ycardsfcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ff0008"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/rcardsfcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ff0008"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:alpha=".7"
+        android:background="#abff9e"
+        android:onClick="reset"
+        android:text="@string/rest"
+        android:textColor="#ff0008" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:alpha=".7"
+        android:background="#abff9e"
+        android:onClick="result"
+        android:text="@string/result"
+        android:textColor="#ff0008"
+        />
+
+</RelativeLayout>

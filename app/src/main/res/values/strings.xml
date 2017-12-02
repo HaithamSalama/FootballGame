@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Football Match</string>
+    <string name="game_on">Game On</string>
+    <string name="rma">RMA</string>
+    <string name="vs">Vs.</string>
+    <string name="fcb">FCB</string>
+    <string name="rest">Reset</string>
+    <string name="result">Result</string>
+    <string name="goals">Goals</string>
+    <string name="goal">Goal</string>
+    <string name="fouls">Fouls</string>
+    <string name="foul">Foul</string>
+    <string name="yellow_cards">Yellow Cards</string>
+    <string name="yellow_card">Yellow Card</string>
+    <string name="red_cards">Red Cards</string>
+    <string name="red_card">Red Card</string>
+</resources>
